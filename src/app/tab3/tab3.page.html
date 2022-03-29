@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Contacts
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,195 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Contacts</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div padding>
+    <ion-segment [(ngModel)]="Person">
+      <ion-segment-button value="Friends">
+        Family
+      </ion-segment-button>
+      <ion-segment-button value="Family">
+        School Friends
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  
+  
+  <div [ngSwitch]="Person">
+    <ion-list *ngSwitchCase="'Friends'">
+      <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Evelyn <br>
+        09289176082
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Jerry <br>
+        09289176082
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Jovelyn <br>
+        09289176082
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Jhon <br>
+        09489122345
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Stephen <br>
+        09218973927
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item> 
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Jeric <br>
+        0956987212
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item> 
+    
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'Family'">
+      <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        maricris <br>
+        09218213542
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Marvin <br>
+        0960724312
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Nicanor <br>
+        09607243123
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Rona
+        09607243123
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Mirasol <br>
+        09161652431
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item> 
+      
+    
+    </ion-list>
+  </div>
+  <div>
+    <ion-list >
+      <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        maricris <br>
+        09218213542
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Marvin <br>
+        0960724312
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Nicanor <br>
+        09607243123
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Rona
+        09607243123
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item>
+       <ion-item>
+     
+        <ion-thumbnail item-start>
+          <img src="assets/avatar1.png">
+        </ion-thumbnail>
+        Mirasol <br>
+        09161652431
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="call-outline"></ion-icon></ion-button>
+      <ion-button (click)="presentActionSheet()" ><ion-icon name="mail-outline"></ion-icon></ion-button>
+       </ion-item> 
+    </ion-list>
+  
+  </div>
+  
 </ion-content>
